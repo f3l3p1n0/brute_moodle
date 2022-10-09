@@ -15,6 +15,11 @@ Ejemplo de uso:
 > 2 - Introduce la frase de error de inicio incorrecto: Inicio de sesión incorrecto, vuelve a intentarlo
 > 3 - Ruta ubicación diccionario users: C:\Users\"your_user"\Desktop\dicc\user.txt
 > 4 - Ruta ubicación diccionario passwords: C:\Users\Marc-PC\Desktop\dicc\pass.txt
+> > ## Este es un encabezado.
+>
+> 1.    Este es el primer _item_ de la lista.
+> 2.    Este es el segundo _item_ de la lista.
+>
 
 Esperas a que encuentre la clave y usuario válidos.
 
