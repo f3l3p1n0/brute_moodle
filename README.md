@@ -21,5 +21,7 @@ Ejemplo de uso:
 
 Esperas a que encuentre la clave y usuario válidos.
 
+[![Ejemplo.png](https://i.postimg.cc/JzLsB3WH/Ejemplo.png)](https://postimg.cc/8jZp26cT)
+
 Pd: Este script se adapta mejor en Linux.
 
