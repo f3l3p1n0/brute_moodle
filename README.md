@@ -5,8 +5,6 @@
 ###############################
 
 
-
-
 Este script ha sido creado con fines educativos. 
 Consiste en realizar fuerza bruta en el login de cualquier página que implemente Moodle.
 
