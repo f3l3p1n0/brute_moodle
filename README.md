@@ -21,3 +21,5 @@ Ejemplo de uso:
 
 Esperas a que encuentre la clave y usuario válidos.
 
+Pd: Este script se adapta mejor en Linux.
+
