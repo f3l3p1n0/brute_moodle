@@ -15,7 +15,7 @@ Ejemplo de uso:
   <li> Introduce la url del moodle a escanear: https://url_moodle </li>
   <li> Introduce la frase de error de inicio incorrecto: Inicio de sesión incorrecto, vuelve a intentarlo </li>
   <li> Ruta ubicación diccionario users: C:\Users\"your_user"\Desktop\dicc\user.txt </li>
-  <li> Ruta ubicación diccionario passwords: C:\Users\Marc-PC\Desktop\dicc\pass.txt </li>
+  <li> Ruta ubicación diccionario passwords: C:\Users\"your_user"\Desktop\dicc\pass.txt </li>
 </ol>
 
 Esperas a que encuentre la clave y usuario válidos.
