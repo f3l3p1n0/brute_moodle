@@ -1,9 +1,6 @@
-###############################
-#         brute_moodle        #
-# Script PoC for Moodle Login #
-#         by f3l3p1n0         #
-###############################
-
+#############################################
+# Script PoC for Moodle Login - by f3l3p1n0 #
+#############################################
 
 Este script ha sido creado con fines educativos. 
 Consiste en realizar fuerza bruta en el login de cualquier página que implemente Moodle.
