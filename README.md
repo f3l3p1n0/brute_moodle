@@ -6,7 +6,7 @@
 <p>Simplemente debes colocar la url del sitio web, el mensaje de error que reporta cuando las credenciales son inválidas y 
 los diccionarios de usuarios y contraseñas. (Más adelante subiré el código para crear diccionarios)</p>
 <hr>
-<h3>Ejemplo de uso</h3>
+<h3>Ejemplo de uso (Windows)</h3>
 <ol>
   <li> Introduce la url del moodle a escanear: https://url_moodle </li>
   <li> Introduce la frase de error de inicio incorrecto: Inicio de sesión incorrecto, vuelve a intentarlo </li>
