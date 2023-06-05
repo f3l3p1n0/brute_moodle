@@ -21,4 +21,7 @@ los diccionarios de usuarios y contraseñas. (Más adelante subiré el código p
 <p>En mi caso quiero atacar el siguiente formulario de ejemplo:<p>
 <img src="https://i.postimg.cc/5NLPyv48/2023-06-05-19-39.png">
 <p>Deberé de tener en cuenta el nombre del input del token (<strong>logintoken</strong>), usuario (<strong>username</strong>) y contraseña (<strong>password</strong>).</p>
+<p>Si los inputs presentan nombres diferentes, deberás de ir al script y cambiarlos:</p>
+<img src="https://i.postimg.cc/3wdfKqdx/2023-06-05-19-40.png">
 <p>Por tanto, deberás de tener en cuenta si el formulario que deseas atacar presentan los mismos nombres en los respectivos inputs o de lo contrario son diferentes.</p>
+
