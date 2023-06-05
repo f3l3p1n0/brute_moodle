@@ -14,7 +14,7 @@ los diccionarios de usuarios y contraseñas. (Más adelante subiré el código p
   <li> Ruta ubicación diccionario passwords: C:\Users\"your_user"\Desktop\dicc\pass.txt </li>
 </ol>
 <br>
-<img src="https://i.postimg.cc/JzLsB3WH/Ejemplo.png" width="600" height="500">
+<img src="https://i.postimg.cc/JzLsB3WH/Ejemplo.png" width="600" height="500" align="center">
 <hr>
 <h3>Posibles problemas a tener en cuenta</h3>
 <h5>Deberás tener en cuenta los valores de los inputs del formulario</h5>
