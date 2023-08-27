@@ -15,6 +15,7 @@ los diccionarios de usuarios y contraseñas. (Más adelante subiré el código p
 </ol>
 <br>
 <p align="center"><img src="https://i.postimg.cc/JzLsB3WH/Ejemplo.png" width="600" height="500"></p>
+<p align="center">* Captura realizada en el momento de la prueba del script en un sistema Linux.</p>
 <hr>
 <h3>Posibles problemas a tener en cuenta</h3>
 <h5>Deberás tener en cuenta los valores de los inputs del formulario</h5>
