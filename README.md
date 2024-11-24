@@ -14,7 +14,7 @@ los diccionarios de usuarios y contraseñas. (Más adelante subiré el código p
   <li> Ruta ubicación diccionario passwords: C:\Users\"your_user"\Desktop\dicc\pass.txt </li>
 </ol>
 <br>
-<p align="center"><img src="https://i.postimg.cc/JzLsB3WH/Ejemplo.png" width="600" height="500"></p>
+<p align="center"><img src="https://i.postimg.cc/9Fk4dg9N/Screenshot-1.png"></p>
 <p align="center">* Captura realizada en el momento de la prueba del script en un sistema Linux.</p>
 <hr>
 <h3>Posibles problemas a tener en cuenta</h3>
